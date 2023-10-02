@@ -40,6 +40,8 @@ import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
 import Billing from "layouts/billing";
 import Profile from "layouts/profile";
+import Booking from "layouts/booking";
+
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 import SignOut from "layouts/authentication/sign-out";
@@ -47,14 +49,14 @@ import SignOut from "layouts/authentication/sign-out";
 import Shop from "examples/Icons/Shop";
 import Office from "examples/Icons/Office";
 import Document from "examples/Icons/Document";
-import SpaceShip from "examples/Icons/SpaceShip";
+import SpaceShip from "examples/Icons/SpaceShip"; 
 import CustomerSupport from "examples/Icons/CustomerSupport";
 import CreditCard from "examples/Icons/CreditCard";
 
 // import VirtualReality from "layouts/virtual-reality";
 // import RTL from "layouts/rtl";
 // import Settings from "examples/Icons/Settings";
-// import Cube from "examples/Icons/Cube";
+import Cube from "examples/Icons/Cube";
 
 const routes = [
   {
@@ -87,6 +89,17 @@ const routes = [
     noCollapse: true,
     protected: true,
   },
+  {
+    type: "collapse",
+    name: "Booking",
+    key: "booking",
+    route: "/booking",
+    icon: <Cube size="12px" />,
+    component: Booking,
+    noCollapse: true,
+    protected: true,
+  },
+
   // {
   //   type: "collapse",
   //   name: "Virtual Reality",
